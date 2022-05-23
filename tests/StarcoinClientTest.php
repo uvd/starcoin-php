@@ -8,7 +8,7 @@ use Starcoin\StarcoinClient;
 class StarcoinClientTest extends \PHPUnit\Framework\TestCase
 {
 
-    private StarcoinClient $client;
+    private  $client;
 
     public  function setUp():void
     {

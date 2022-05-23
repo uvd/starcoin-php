@@ -8,7 +8,7 @@ use Starcoin\type\ParamInterface;
 class Transport implements TransportInterface
 {
 
-    private TransportInterface $transport;
+    private  $transport;
 
     public function __construct(string $address)
     {

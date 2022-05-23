@@ -6,7 +6,7 @@ use Starcoin\Transport\Transport;
 
 class JsonRpc
 {
-    private Transport $rpc;
+    private  $rpc;
 
     public function __construct(string $address)
     {

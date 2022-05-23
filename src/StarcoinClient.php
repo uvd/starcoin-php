@@ -8,7 +8,7 @@ class StarcoinClient
 {
 
 
-    private JsonRpc $rpc;
+    private  $rpc;
 
     public function __construct(string $rpcUrl)
     {

@@ -7,8 +7,8 @@ use Starcoin\Exception\JsonRpcException;
 class HttpTransport implements TransportInterface
 {
 
-    private \GuzzleHttp\Client $client;
-    private string $address;
+    private $client;
+    private  $address;
 
     public function __construct(string $address)
     {
@@ -34,6 +34,7 @@ class HttpTransport implements TransportInterface
             'json' => $query
         ]);
 
+        var_dump($r->getBody()->getContents());
 
         $array = json_decode($r->getBody()->getContents(), true);
         if ($array && isset($array["error"])) {
